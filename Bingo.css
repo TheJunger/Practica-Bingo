@@ -1,0 +1,142 @@
+body{
+    color: #222;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 2.5vh;
+    background-image: linear-gradient(to bottom, #2455c0, #0b142c);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.up{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.player, .cpu{
+    min-width: 14vw;
+    max-width: 15vw;
+    background-color: #9e1c23;
+    box-shadow: 0 0 15px #222;
+    transition: opacity 0.5s;
+    opacity: 0;
+}
+
+.player h3{
+    padding: 2vh 7vh;
+    color: #eee;
+    background-color: #9e1c23;
+}
+
+.cpu h3{
+    padding: 2vh 7vh;
+    color: #eee;
+    background-color: #9e1c23;
+}
+
+.numerosplayer, .numeroscpu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.numerosplayer p {
+    padding: 0 0.2vh;
+    padding-top: 2vh;
+    padding-bottom: -2vh;
+    width: 5vh;
+    height: 5vh;
+    background-color: #eee;
+    margin: 0.4vh;
+}
+
+.numeroscpu p {
+    padding: 0 0.2vh;
+    padding-top: 2vh;
+    padding-bottom: -2vh;
+    width: 5vh;
+    height: 5vh;
+    background-color: #eee;
+    margin: 0.4vh;
+}
+
+.down{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s;
+    opacity: 0;
+}
+
+.bola{
+    padding: 9vh;
+    border-radius: 50%;
+    display: flex;
+    border: 3px solid #222;
+    justify-content: center;
+    align-items: center;
+    background-image: radial-gradient( #ddd, #555);
+}
+
+.bola p{
+    border: 2px solid gray;
+    padding: 1vh;
+    background-color: #eee;
+    position: absolute;
+}
+
+.down {
+    margin-top: 5vh;
+    height: 50vh;
+    display: flex;
+    align-items: flex-start;
+    border: 2px solid #eee;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+}
+
+.ncont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2vh;
+    flex-wrap: wrap;
+}
+
+.ncont p{
+    padding: 0 0.5vh;
+    padding-top: 2vh;
+    padding-bottom: -2vh;
+    width: 5vh;
+    height: 5vh;
+    background-color: #eee;
+    margin: 0.4vh;
+}
+
+.botonCentral{
+    transition: all 0.2s
+}
+
+.botonCentral:hover {
+    color: #777;
+    border: #eee;
+    transform: scale(1.2);
+}
+
+
